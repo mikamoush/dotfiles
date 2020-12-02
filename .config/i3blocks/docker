@@ -1,0 +1,5 @@
+#!/bin/bash
+
+# Number of docker containers running
+count=$(docker ps -q | wc -l)
+echo "$LABEL$count"
